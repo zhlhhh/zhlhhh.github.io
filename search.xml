@@ -1,80 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/09/12/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>/2023/09/12/ProMax%E2%80%9D/</url>
-    <content><![CDATA[<h1 id="数学小报0201"><a href="#数学小报0201" class="headerlink" title="数学小报0201"></a>数学小报0201</h1><h4 id="主编：郑瀚霖"><a href="#主编：郑瀚霖" class="headerlink" title="主编：郑瀚霖"></a>主编：郑瀚霖</h4><blockquote>
-<p><em><strong>Tip!</strong></em></p>
-<p><strong>欢迎来到新一学期的数学小报，这一学期的数学小报有些许不同，你们在作业上见到的数学小报不是完整版因为篇幅受限只有精简版的。你们可以在【网址】上看到完整版的数学小报</strong></p>
-</blockquote>
-<p><strong>哈密顿回路（Hamiltonian Circuit）</strong>：</p>
-<p>简介：在图论中，哈密顿回路是一个经过每个节点一次且只一次的回路。找到一个图的哈密顿回路是否存在是一个有趣的数学问题，它与旅行推销员问题相关。</p>
-<h3 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a>前情提要</h3><blockquote>
-<ol>
-<li>本次我们要介绍与欧拉图相对应的哈密顿图的有关内容：<ul>
-<li>哈密顿回路(Hamiltonian cycle)</li>
-<li>哈密顿图(Hamiltonian Path)</li>
-<li>旅行推销员问题简介(Travelling salesman problem)</li>
-</ul>
-</li>
-</ol>
-</blockquote>
-<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><h4 id="哈密顿回路"><a href="#哈密顿回路" class="headerlink" title="哈密顿回路"></a>哈密顿回路</h4><h5 id="1-定义："><a href="#1-定义：" class="headerlink" title="1. 定义："></a>1. 定义：</h5><p>在一个回路中，除了经过初始结点两次以外，恰好经过每个结点<strong>一次</strong>，则称此回路为哈密顿回路，哈密顿回路中每个结点都为偶结点</p>
-<img src="C:\Users\27043\Desktop\图2.png" alt="图2" style="zoom: 50%;" />
-
-
-
-<h5 id="2-证明"><a href="#2-证明" class="headerlink" title="2. 证明"></a>2. 证明</h5><ul>
-<li>由于现在还没有判断一个图中是否存在哈密顿回路的定理，所以我们只能根据自己的经验来判断，下文以一个简单的图</li>
-</ul>
-<h6 id="简单的图"><a href="#简单的图" class="headerlink" title="简单的图"></a>简单的图</h6><img src="C:\Users\27043\Desktop\图1.png" alt="图1" style="zoom:50%;" />
-
-<ol>
-<li>在上图中，共有5个结点，可想而知，如果存在哈密顿回路，就必须有5条边，且每个结点都为偶结点。</li>
-<li>所以我们尝试删去某一些边来达到目的，v1和v3为奇结点，我们从此下手，分别去掉一条与v1和v3相关联的边，那么只剩下4条边，不符合条件，所以此图中不存在哈密顿回路。</li>
-</ol>
-<h6 id="复杂的图"><a href="#复杂的图" class="headerlink" title="复杂的图"></a>复杂的图</h6><img src="C:\Users\27043\Desktop\图4.png" alt="img" style="zoom:50%;" />
-
-<ol>
-<li>在上图中，假设有一个哈密顿回路，由于v1和v3是度数为2的结点，所以v1和v3所关联的边(v1,v8)、(v1,v2)、(v2,v3)、(v3,v4)一定在回路中。</li>
-<li>结点v2，v7，v5度数不为2，所以我们删去边(v2,v7)和(v2,v5)</li>
-<li>结点v5，v6，v7的度数为2，所以现在形成了一个回路(v1,v2,v3,v4,v5,v6,v7,v8)</li>
-<li>图中还存在结点v9，将v9加入回路中就势必会增加某些点的度数，所以使得某些点的度数大于2</li>
-</ol>
-<p>通过上述几点，可得出上图中不存在哈密顿回路</p>
-<h6 id="哈密顿图"><a href="#哈密顿图" class="headerlink" title="哈密顿图"></a>哈密顿图</h6><h5 id="定义：在图G中，若含有哈密顿回路，则称图G为哈密顿图"><a href="#定义：在图G中，若含有哈密顿回路，则称图G为哈密顿图" class="headerlink" title="定义：在图G中，若含有哈密顿回路，则称图G为哈密顿图"></a>定义：在图G中，若含有哈密顿回路，则称图G为哈密顿图</h5><img src="C:\Users\27043\Desktop\图3.png" alt="img" style="zoom:50%;" />
-
-<ul>
-<li>上图中，存在哈密顿回路(v1,v2,v5,v3,v4,v1)，所以上图可称为哈密顿图</li>
-</ul>
-<h4 id="旅行推销员问题简介"><a href="#旅行推销员问题简介" class="headerlink" title="旅行推销员问题简介"></a>旅行推销员问题简介</h4><h5 id="问题内容"><a href="#问题内容" class="headerlink" title="问题内容"></a>问题内容</h5><blockquote>
-<p>给定一系列城市和每对城市之间的距离，求解访问每一座城市一次并回到起始城市的最短回路。</p>
-</blockquote>
-<p>这个问题是基于寻找哈密顿回路的基础上，只不过所对应的图是加权无向图。</p>
-]]></content>
-  </entry>
-  <entry>
     <title></title>
     <url>/2023/09/11/%E6%95%B0%E5%AD%A6%E5%B0%8F%E6%8A%A50201/</url>
-    <content><![CDATA[<h1 id="数学小报0201"><a href="#数学小报0201" class="headerlink" title="数学小报0201"></a>数学小报0201</h1><h4 id="主编：郑瀚霖"><a href="#主编：郑瀚霖" class="headerlink" title="主编：郑瀚霖"></a>主编：郑瀚霖</h4><blockquote>
+    <content><![CDATA[<hr>
+<h2 id="title-数学小报0201"><a href="#title-数学小报0201" class="headerlink" title="title:数学小报0201"></a>title:数学小报0201</h2><h1 id="数学小报0201"><a href="#数学小报0201" class="headerlink" title="数学小报0201"></a>数学小报0201</h1><h4 id="主编：郑瀚霖"><a href="#主编：郑瀚霖" class="headerlink" title="主编：郑瀚霖"></a>主编：郑瀚霖</h4><blockquote>
 <p><em><strong>Tip!</strong></em></p>
 <p><strong>欢迎来到新一学期的数学小报，这一学期的数学小报有些许不同，你们在作业上见到的数学小报不是完整版因为篇幅受限只有精简版的。你们可以在【网址】上看到完整版的数学小报</strong></p>
 </blockquote>
